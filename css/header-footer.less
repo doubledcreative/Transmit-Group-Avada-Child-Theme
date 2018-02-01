@@ -1,0 +1,398 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TRANSMIT GROUP
+
+Theme Name: Avada Child Theme
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+CONTENTS
+
+- Header
+- Footer
+- Media Queries
+	- 800px
+	- 1024px (Mobile Header Switch)
+	- 800px
+	
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* HEADER */
+
+/* Main Header */
+.fusion-header-wrapper{.gradient();
+	.fusion-header-v1{
+		.fusion-header{padding-left: 40px!important; padding-right: 40px!important;
+			.fusion-row{
+				.fusion-main-menu{
+					.fusion-menu{
+						.menu-item{
+							a{.uppercase(); -webkit-font-smoothing: antialiased;
+								.menu-text{-webkit-font-smoothing: antialiased;}
+							}								
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* FOOTER */
+
+/* Footer Styling */
+.fusion-footer{
+	.ddc-footer{
+		.fusion-row{.border(@border: 1px 0 1px 0); border-color: @slate1!important; margin-top: 80px;
+			.fusion-layout-column{.border(@border: 0 1px 0 0); border-color: @slate1!important; padding: 33px 40px!important;
+				.fusion-column-wrapper{
+					.fusion-text{
+						a:hover{text-decoration: underline;}
+						P{margin: 0 0 20px 0!important;
+							&:last-of-type{margin: 0!important;}
+						}
+					}
+				}
+				
+				&:first-of-type{
+					.fusion-column-wrapper{padding: 5px 0!important;}
+				}
+				
+				&:last-of-type{.border(@border: 0);
+					.fusion-column-wrapper{
+						.fusion-text{
+							P{margin: 0 0 5px 0!important;}
+						}
+					}
+				}	
+			}
+		}
+	}
+}
+
+/* Footer Widget - Footer Menu */
+.ddc-footer-menu{padding: 0!important;
+	.widget_nav_menu{margin: 0!important;
+		.menu-main-menu-container{
+			ul{
+				li{border: none; text-align: left; padding: 2px 10px 2px 0;
+					a{color: @white;
+						&:hover{color: @white; text-decoration: underline;}
+						&:before{display: none;}
+					}
+					&:last-of-type{padding-bottom: 0;}
+				}
+			}
+		}
+	}
+}
+
+/* Footer Logo Styling */
+.fusion-footer{
+	.fusion-footer-widget-area{
+		.fusion-row{
+			.fusion-widget-area{padding-left: 40px; padding-right: 40px; border: none!important;
+				.fusion-column{
+					.widget{
+						.insert-page{
+							.logos-wrapper{
+								.fusion-row{.border(@border: 0 0 1px 0); border-color: @slate1!important;
+									.fusion-layout-column{padding: 0 20px!important;
+										&:nth-of-type(1){.border(@border: 0 1px 0 0); border-color: @slate1!important; width: 23%!important; padding: 0;}
+										&:nth-of-type(2){width: 17%!important; padding-left: 40px!important;}
+										&:nth-of-type(3){width: 16%!important;}
+										&:nth-of-type(4){width: 14%!important;}
+										&:nth-of-type(5){width: 13%!important;}
+										&:nth-of-type(6){width: 17%!important; padding-right: 40px!important;}
+											
+										.fusion-column-wrapper{
+											.fusion-column-content-centered{min-height: 140px!important;
+												.fusion-column-content{
+													.fusion-imageframe{margin-bottom: 0!important;}
+												}
+											}
+										}
+											
+									}
+								}
+							}		
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Copyright Styling */
+.fusion-footer-copyright-area{padding-top: 40px!important; padding-bottom: 40px!important;
+	.fusion-row{
+		.fusion-copyright-content{
+			.fusion-copyright-notice{
+				a{
+					&:hover{text-decoration: underline!important;}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1024px ///////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1024px) {
+	
+	
+	/* FOOTER */
+	
+	
+	/* Footer Styling */
+	.fusion-footer{
+		.ddc-footer{
+			.fusion-row{margin-top: 40px;}
+		}
+	}
+		
+	/* Footer Logo Styling */
+	.fusion-footer{
+		.fusion-footer-widget-area{
+			.fusion-row{
+				.fusion-widget-area{padding-left: 10px!important; padding-right: 10px!important;
+					.fusion-column{
+						.widget{
+							.insert-page{
+								.logos-wrapper{
+									.fusion-row{
+										.fusion-layout-column{padding: 0 20px!important;
+											&:nth-of-type(1){width: 23%!important; padding: 0 40px!important;}
+											&:nth-of-type(2){width: 18%!important;}
+											&:nth-of-type(3){width: 15%!important;}
+											&:nth-of-type(4){width: 16%!important;}
+											&:nth-of-type(5){width: 11%!important;}
+											&:nth-of-type(6){width: 17%!important;}
+											
+											.fusion-column-wrapper{
+												.fusion-column-content-centered{min-height: 120px!important;}
+											}
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/* Copyright Styling */
+	.fusion-footer-copyright-area{padding-top: 40px!important; padding-bottom: 40px!important;}
+	
+
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 800px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 800px) {
+
+
+	/* FOOTER */
+	
+	/* Footer Styling */
+	.fusion-footer{
+		.ddc-footer{
+			.fusion-row{.border(@border: 0); margin-top: 0;
+				.fusion-layout-column{.border(@border: 0 0 1px 0); border-color: @slate1!important; padding: 8% 0!important;
+					&:last-of-type{.border(@border: 0 0 1px 0); border-color: @slate1!important;}
+					&:nth-of-type(2n){padding: 0!important;}
+				}
+			}
+		}
+	}
+	
+	
+	/* Footer Widget - Footer Menu */
+	.ddc-footer-menu{padding: 0!important;
+		.widget_nav_menu{margin: 0!important;
+			.menu-main-menu-container{
+				ul{
+					li{.border(@border: 0 0 1px 0); border-color: @slate1!important; text-align: left; padding: 15px 10px 15px 0!important;
+						a{color: @white;
+							&:hover{color: @white; text-decoration: underline;}
+							&:before{display: none;}
+						}
+						&:last-of-type{.border(@border: 0);}
+					}
+				}
+			}
+		}
+	}
+	
+	/* Footer Logo Styling */
+	.fusion-footer{
+		.fusion-footer-widget-area{padding-left: 8%!important; padding-right: 8%!important;
+			.fusion-row{
+				.fusion-widget-area{padding-left: 0!important; padding-right: 0!important;
+					.fusion-column{
+						.widget{
+							.insert-page{
+								.logos-wrapper{
+									.fusion-row{padding: 25px 20px!important;
+										.fusion-layout-column{
+											&:nth-of-type(1){padding: 10px 20px!important; width: 33.33%!important; border: 0!important;}
+											&:nth-of-type(2){padding: 10px 20px!important; width: 33.33%!important;}
+											&:nth-of-type(3){padding: 10px 20px!important; width: 33.33%!important;}
+											&:nth-of-type(4){padding: 10px 20px!important; width: 33.33%!important;}
+											&:nth-of-type(5){padding: 10px 10%!important; width: 33.33%!important;}
+											&:nth-of-type(6){padding: 10px 20px!important; width: 33.33%!important;}
+											
+											.fusion-column-wrapper{
+												.fusion-column-content-centered{min-height: 80px!important;
+													.fusion-column-content{
+														.fusion-imageframe{margin-bottom: 0!important;
+															img{max-width: 130px!important; width: 100%!important;}
+														}
+													}
+												}
+											}	
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 500px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 500px) {
+	
+	
+	/* HEADER */
+
+	/* Mobile Header */
+	.fusion-header-wrapper{
+		.fusion-mobile-menu-design-flyout{
+			.fusion-header{padding-right: 20px!important;
+				.fusion-row{
+					.fusion-header-has-flyout-menu-content{
+						.fusion-flyout-menu-icons{}
+						.fusion-mobile-nav-holder{
+							.fusion-mobile-menu{
+								.fusion-mobile-nav-item{
+									a{font-size: 22px; line-height: 50px;}
+								}
+								.fusion-mobile-current-nav-item{}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/* FOOTER */
+	
+	/* Footer Logo Styling */
+	.fusion-footer{
+		.fusion-footer-widget-area{padding: 0 25px!important;
+			.fusion-row{
+				.fusion-widget-area{
+					.fusion-column{
+						.widget{
+							.insert-page{
+								.logos-wrapper{
+									.fusion-row{padding: 25px 0!important;
+										.fusion-layout-column{padding: 40px 0!important;
+											&:nth-of-type(1){width: 100%!important;}
+											&:nth-of-type(2){width: 100%!important;}
+											&:nth-of-type(3){width: 100%!important;}
+											&:nth-of-type(4){width: 100%!important;}
+											&:nth-of-type(5){width: 100%!important;}
+											&:nth-of-type(6){width: 100%!important;}
+											
+											.fusion-column-wrapper{
+												.fusion-column-content-centered{min-height: 80px!important;
+													.fusion-column-content{
+														.fusion-imageframe{margin-bottom: 0!important;
+															img{max-width: 120px!important;}
+														}
+													}
+												}
+											}	
+											
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/* Copyright Styling */
+	.fusion-footer-copyright-area{
+		.fusion-row{
+			.fusion-copyright-content{
+				.fusion-copyright-notice{font-size: 14px!important;
+					a{font-size: 14px!important;
+						&:hover{text-decoration: underline!important;}
+					}
+				}
+			}
+		}
+	}
+	
+		
+}
