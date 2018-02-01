@@ -1,0 +1,62 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TRANSMIT GROUP
+
+Theme Name: Avada Child Theme
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+CONTENTS
+
+- Animations
+	
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* SWING LEFT RIGHT */
+
+.swing(){
+	-webkit-animation: swing 1s ease;
+	animation: swing 1s ease;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing {	
+	15%	 {-webkit-transform: translateX(5px); transform: translateX(5px);}
+	30%	 {-webkit-transform: translateX(-5px); transform: translateX(-5px);}	
+	50%	 {-webkit-transform: translateX(3px); transform: translateX(3px);}	
+	65%	 {-webkit-transform: translateX(-3px); transform: translateX(-3px);}	
+	80%	 {-webkit-transform: translateX(2px); transform: translateX(2px);}	
+	100% {-webkit-transform: translateX(0px); transform: translateX(0px);}  
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* FLASH */
+
+.flash(){
+	-webkit-animation: flash 0.7s ease;
+	animation: flash 0.7s ease;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+@-webkit-keyframes flash{
+	0%	 {opacity: 1;}
+	25%	 {opacity: 0;}
+	50%	 {opacity: 1;}
+	75%	 {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
