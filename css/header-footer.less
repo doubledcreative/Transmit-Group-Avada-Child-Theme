@@ -52,7 +52,7 @@ CONTENTS
 /* FOOTER */
 
 /* Footer Styling */
-.fusion-footer{
+.fusion-footer{.gradient2()!important;
 	.ddc-footer{
 		.fusion-row{.border(@border: 1px 0 1px 0); border-color: @slate1!important; margin-top: 80px;
 			.fusion-layout-column{.border(@border: 0 1px 0 0); border-color: @slate1!important; padding: 33px 40px!important;
@@ -88,7 +88,7 @@ CONTENTS
 			ul{
 				li{border: none; text-align: left; padding: 2px 10px 2px 0;
 					a{color: @white;
-						&:hover{color: @white; text-decoration: underline;}
+						&:hover{color: @orange1; text-decoration: underline;}
 						&:before{display: none;}
 					}
 					&:last-of-type{padding-bottom: 0;}
@@ -100,7 +100,7 @@ CONTENTS
 
 /* Footer Logo Styling */
 .fusion-footer{
-	.fusion-footer-widget-area{
+	.fusion-footer-widget-area{background-color:none!important;
 		.fusion-row{
 			.fusion-widget-area{padding-left: 40px; padding-right: 40px; border: none!important;
 				.fusion-column{
@@ -141,7 +141,7 @@ CONTENTS
 		.fusion-copyright-content{
 			.fusion-copyright-notice{
 				a{
-					&:hover{text-decoration: underline!important;}
+					&:hover{text-decoration:underline!important;color:@orange1;}
 				}
 			}
 		}
@@ -162,8 +162,35 @@ CONTENTS
 @media only screen and (max-width: 1024px) {
 	
 	
-	/* FOOTER */
+	/* HEADER */
+
+	/* Mobile Header */
+	.fusion-header-wrapper{
+		.fusion-mobile-menu-design-flyout{
+			.fusion-header{padding-left: 40px!important; padding-right: 20px!important;
+				.fusion-row{
+					.fusion-header-has-flyout-menu-content{
+						.fusion-flyout-menu-icons{
+							.fusion-flyout-menu-toggle{padding: 33px!important;}
+						}
+						.fusion-mobile-nav-holder{
+							.fusion-mobile-menu{
+								.fusion-mobile-nav-item{
+									a{font-size: 22px; line-height: 50px;}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/* FOOTER */
 	
 	/* Footer Styling */
 	.fusion-footer{
@@ -207,7 +234,7 @@ CONTENTS
 	
 	/* Copyright Styling */
 	.fusion-footer-copyright-area{padding-top: 40px!important; padding-bottom: 40px!important;}
-	
+
 
 }
 
@@ -223,6 +250,19 @@ CONTENTS
 
 
 @media only screen and (max-width: 800px) {
+	
+	
+	/* HEADER */
+
+	/* Mobile Header */
+	.fusion-header-wrapper{
+		.fusion-mobile-menu-design-flyout{
+			.fusion-header{padding-left: 25px!important; padding-right: 12px!important;}
+		}
+	}
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////
 
 
 	/* FOOTER */
@@ -238,7 +278,6 @@ CONTENTS
 			}
 		}
 	}
-	
 	
 	/* Footer Widget - Footer Menu */
 	.ddc-footer-menu{padding: 0!important;
@@ -311,33 +350,6 @@ CONTENTS
 
 
 @media only screen and (max-width: 500px) {
-	
-	
-	/* HEADER */
-
-	/* Mobile Header */
-	.fusion-header-wrapper{
-		.fusion-mobile-menu-design-flyout{
-			.fusion-header{padding-right: 20px!important;
-				.fusion-row{
-					.fusion-header-has-flyout-menu-content{
-						.fusion-flyout-menu-icons{}
-						.fusion-mobile-nav-holder{
-							.fusion-mobile-menu{
-								.fusion-mobile-nav-item{
-									a{font-size: 22px; line-height: 50px;}
-								}
-								.fusion-mobile-current-nav-item{}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	
-////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	
 	/* FOOTER */
