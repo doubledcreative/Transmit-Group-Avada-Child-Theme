@@ -54,7 +54,7 @@ CONTENTS
 }
 
 /* Border Radius */
-.form-border-radius(@border-radius: 0){
+.form-border-radius(@border-radius: 2px){
 	-webkit-border-radius:@border-radius!important;
 	-moz-border-radius:@border-radius!important;
 	border-radius:@border-radius!important;
@@ -78,6 +78,7 @@ CONTENTS
 /* Focus Background Colour */
 .form-input-focus(){
 	background-color: @focus-colour;
+	outline:none;
 }
 
 /* Button Styling */
@@ -143,7 +144,7 @@ CONTENTS
 }
 
 /* Form Maximum Width */
-.form-max-width(@max-width: 1300px){
+.form-max-width(@max-width:1000px){
 	max-width: @max-width!important;
 	margin-left: auto!important;
 	margin-right: auto!important;
